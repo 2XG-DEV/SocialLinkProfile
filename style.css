@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333333;
+  --green: #c4f82a;
+  --white: #ffffff;
+
+  --font-size-text-preset-1: 1.5rem;
+  --font-size-text-preset-2: 0.875rem;
+
+  --spacing-500: 2.5rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-150: 0.75rem;
+  --spacing-100: 0.5rem;
+  --spacing-50: 0.25rem;
+}
+
+body {
+  background-color: var(--grey-900, #141414);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typography {
+  color: var(--white, #ffffff);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.text-1 {
+  font-size: var(--font-size-text-preset-1, 1.5rem);
+  font-weight: 600;
+}
+
+.text-2 {
+  font-size: var(--font-size-text-preset-2, 0.875rem);
+}
+
+.text-3 {
+  font-size: var(--font-size-text-preset-2, 0.875rem);
+  font-weight: 700;
+  color: var(--green, #c4f82a);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-200, 1rem);
+  padding: var(--spacing-500);
+  border-radius: 0.75rem;
+
+  background-color: var(--grey-800, #1f1f1f);
+}
+
+.card__avatar {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 62.4375rem;
+}
+
+.card__contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200, 1rem);
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--grey-700, #333333);
+  padding: var(--spacing-150, 0.75rem);
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+a:hover {
+  background-color: var(--green, #c4f82a);
+}
